@@ -3,15 +3,14 @@ import React,{useState} from "react";
 
 export default function TextFrom(props) {
     const handleUpClick = () =>{
-        console.log("UpperCase was clicked" + text);
+        // console.log("UpperCase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
     };
     const handleOnChange = (event) =>{
-        console.log("onchange called");
         setText(event.target.value);
     };
-    
+
     const [text, setText] = useState("Enter text here");
   return (
     <div>
